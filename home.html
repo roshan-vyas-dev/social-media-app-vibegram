@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vibegram</title>
+
+    <link rel="icon" href="./images/insta-favicon.png" type="image/png">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+    <!-- Internal CSS -->
+    <style>
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            /* IE and Edge */
+            scrollbar-width: none;
+            /* Firefox */
+        }
+    </style>
+
+
+</head>
+
+<body class="font-montserrat bg-[#0f1115] text-white">
+
+    <!-- full screen div -->
+
+    <div class="flex min-h-screen">
+
+        <!-- Left Sidebar -->
+        <aside class="w-64  p-4 sticky top-0 h-screen border-r border-white/10 ">
+
+            <!-- Top Section: name -->
+            <a href="#" class="mt-5 block">
+                <h1 class="text-white text-xl font-bold active:text-white/70   transition-transform duration-200 mb-6 ml-3 "
+                    style="font-family: 'Pacifico', cursive;">Vibegram</h1>
+            </a>
+
+            <!-- Middle Section: Navigation Links -->
+            <div class="mt-10">
+                <nav class="space-y-4 text-lg">
+
+                    <!-- Home -->
+                    <a href="#home"
+                        class="flex items-center gap-3 p-2 rounded-lg hover:bg-white/10 cursor-pointer active:scale-95 transition-transform duration-200">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-white" fill="currentColor"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M3.75 10.5L12 3l8.25 7.5V20.25a.75.75 0 01-.75.75H15.75a.75.75 0 01-.75-.75V15h-6v5.25a.75.75 0 01-.75.75H4.5a.75.75 0 01-.75-.75V10.5z" />
+                        </svg>
+                        <span>Home</span>
+                    </a>
+
+
+                    <!-- Search -->
+                    <a href="#"
+                        class="flex items-center gap-3 p-2 rounded-lg hover:bg-white/10  cursor-pointer active:scale-95 transition-transform duration-200">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-white" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M21 21l-4.35-4.35M11 18a7 7 0 100-14 7 7 0 000 14z" />
+                        </svg>
+                        <span>Search</span>
+                    </a>
+
+                    <!-- Explore -->
+                    <a href="#"
+                        class="flex items-center gap-3 p-2 rounded-lg hover:bg-white/10  cursor-pointer active:scale-95 transition-transform duration-200">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-white" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3" />
+                            <circle cx="12" cy="12" r="10" stroke-width="2" stroke="currentColor" fill="none" />
+                        </svg>
+                        <span>Explore</span>
+                    </a>
+
+                    <!-- Reels -->
+                    <a href="#"
+                        class="flex items-center gap-3 p-2 rounded-lg hover:bg-white/10  cursor-pointer active:scale-95 transition-transform duration-200">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-white" fill="currentColor"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M2.25 7.125V16.875C2.25 18.321 3.429 19.5 4.875 19.5H19.125C20.571 19.5 21.75 18.321 21.75 16.875V7.125C21.75 5.679 20.571 4.5 19.125 4.5H4.875C3.429 4.5 2.25 5.679 2.25 7.125ZM9.75 15.75V8.25L16.5 12L9.75 15.75Z" />
+                        </svg>
+                        <span>Reels</span>
+                    </a>
+
+                    <!-- Messages -->
+                    <a href="#"
+                        class="flex items-center gap-3 p-2 rounded-lg hover:bg-white/10  cursor-pointer active:scale-95 transition-transform duration-200">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-white" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M2.5 12l19-8-8 19-3-7-8-4z" />
+                        </svg>
+                        <span>Messages</span>
+                    </a>
+
+
+                    <!-- Notifications -->
+                    <a href="#"
+                        class="flex items-center gap-3 p-2 rounded-lg hover:bg-white/10  cursor-pointer active:scale-95 transition-transform duration-200">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-white" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14V9a6 6 0 10-12 0v5c0 .386-.145.735-.405 1.005L4 17h5m6 0v1a3 3 0 11-6 0v-1h6z" />
+                        </svg>
+                        <span>Notifications</span>
+                    </a>
+
+                    <!-- Create -->
+                    <a href="#"
+                        class="flex items-center gap-3 p-2 rounded-lg hover:bg-white/10  cursor-pointer active:scale-95 transition-transform duration-200">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-white" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+                        </svg>
+                        <span>Create</span>
+                    </a>
+
+                    <!-- Profile -->
+                    <a href="./profile.html"
+                        class="flex items-center gap-3 p-2 rounded-lg hover:bg-white/10  cursor-pointer active:scale-95 transition-transform duration-200">
+                        <img src="https://i.pravatar.cc/100" alt="profile" class="w-6 h-6 rounded-full object-cover">
+                        <span>Profile</span>
+                    </a>
+                </nav>
+
+
+            </div>
+
+        </aside>
+
+        <!-- Main Content -->
+        <main class="flex-1 p-4">
+
+            <!-- STORIES -->
+            <div class="flex items-center  my-3 gap-4  overflow-x-auto  no-scrollbar  pb-4  max-w-xl mx-auto">
+                <!-- Story 1 -->
+                <div class="flex flex-col items-center flex-shrink-0">
+                    <div class="w-20 h-20 rounded-full bg-gradient-to-r from-green-400 to-blue-500 p-[2px]">
+                        <img src="https://i.pravatar.cc/110" class="w-full h-full rounded-full object-cover">
+                    </div>
+                    <span class="text-xs mt-1">cristiano</span>
+                </div>
+
+                <!-- Story 2 -->
+                <div class="flex flex-col items-center flex-shrink-0">
+                    <div class="w-20 h-20 rounded-full bg-gradient-to-r from-green-400 to-blue-500 p-[2px]">
+                        <img src="https://i.pravatar.cc/101" class="w-full h-full rounded-full object-cover">
+                    </div>
+                    <span class="text-xs mt-1">realmadrid</span>
+                </div>
+
+                <!-- Story 3 -->
+                <div class="flex flex-col items-center flex-shrink-0">
+                    <div class="w-20 h-20 rounded-full bg-gradient-to-r from-green-400 to-blue-500 p-[2px]">
+                        <img src="https://i.pravatar.cc/102" class="w-full h-full rounded-full object-cover">
+                    </div>
+                    <span class="text-xs mt-1">fcbayern</span>
+                </div>
+
+                <!-- Story 4 -->
+                <div class="flex flex-col items-center flex-shrink-0">
+                    <div class="w-20 h-20 rounded-full bg-gradient-to-r from-green-400 to-blue-500 p-[2px]">
+                        <img src="https://i.pravatar.cc/103" class="w-full h-full rounded-full object-cover">
+                    </div>
+                    <span class="text-xs mt-1">alnassr</span>
+                </div>
+
+                <!-- Story 5 -->
+                <div class="flex flex-col items-center flex-shrink-0">
+                    <div class="w-20 h-20 rounded-full bg-gradient-to-r from-green-400 to-blue-500 p-[2px]">
+                        <img src="https://i.pravatar.cc/104" class="w-full h-full rounded-full object-cover">
+                    </div>
+                    <span class="text-xs mt-1">fcbarcelona</span>
+                </div>
+
+                <!-- Story 6 -->
+                <div class="flex flex-col items-center flex-shrink-0">
+                    <div class="w-20 h-20 rounded-full bg-gradient-to-r from-green-400 to-blue-500 p-[2px]">
+                        <img src="https://i.pravatar.cc/105" class="w-full h-full rounded-full object-cover">
+                    </div>
+                    <span class="text-xs mt-1">manutd</span>
+                </div>
+
+                <!-- story 7 -->
+                <div class="flex flex-col items-center flex-shrink-0">
+                    <div class="w-20 h-20 rounded-full bg-gradient-to-r from-green-400 to-blue-500 p-[2px]">
+                        <img src="https://i.pravatar.cc/106" class="w-full h-full rounded-full object-cover">
+                    </div>
+                    <span class="text-xs mt-1">arsenal</span>
+                </div>
+
+                <!-- story 8 -->
+                <div class="flex flex-col items-center flex-shrink-0">
+                    <div class="w-20 h-20 rounded-full bg-gradient-to-r from-green-400 to-blue-500 p-[2px]">
+                        <img src="https://i.pravatar.cc/107" class="w-full h-full rounded-full object-cover">
+                    </div>
+                    <span class="text-xs mt-1">chelsea</span>
+                </div>
+
+                <!-- story 9 -->
+                <div class="flex flex-col items-center flex-shrink-0">
+                    <div class="w-20 h-20 rounded-full bg-gradient-to-r from-green-400 to-blue-500 p-[2px]">
+                        <img src="https://i.pravatar.cc/108" class="w-full h-full rounded-full object-cover">
+                    </div>
+                    <span class="text-xs mt-1">mancity</span>
+                </div>
+
+
+                <!-- story 10 -->
+                <div class="flex flex-col items-center flex-shrink-0">
+                    <div class="w-20 h-20 rounded-full bg-gradient-to-r from-green-400 to-blue-500 p-[2px]">
+                        <img src="https://i.pravatar.cc/109" class="w-full h-full rounded-full object-cover">
+                    </div>
+                    <span class="text-xs mt-1">astonvilla</span>
+                </div>
+
+            </div>
+
+
+            <!-- POSTS -->
+            <div class="flex flex-col items-center gap-8 mt-6">
+
+                <!-- ================= POST 1 ================= -->
+                <div class="w-full max-w-md  rounded-lg overflow-hidden cursor-pointer">
+
+                    <!-- Header -->
+                    <div class="flex items-center justify-between gap-3 p-3">
+                        <div class="flex items-center gap-3">
+                            <img src="https://i.pravatar.cc/101" class="w-8 h-8 rounded-full object-cover">
+                            <span class="font-semibold text-sm">realmadrid</span>
+                            <span class="text-sm text-gray-400">• 14h</span>
+                        </div>
+
+                        <div class="text-3xl flex items-center">...</div>
+                    </div>
+
+                    <!-- Image -->
+                    <img src="https://picsum.photos/500/500?random=1" class="w-full object-cover">
+
+                    <!-- Actions -->
+                    <div class="flex items-center gap-5 p-3">
+
+                        <!-- Like -->
+                        <svg class="w-6 h-6 cursor-pointer hover:text-red-500 transition" fill="none"
+                            stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M20.8 4.6a5.5 5.5 0 00-7.8 0L12 5.6l-1-1a5.5 5.5 0 00-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 000-7.8z" />
+                        </svg>
+
+                        <!-- Comment -->
+                        <svg class="w-6 h-6 cursor-pointer" fill="none" stroke="currentColor" stroke-width="1.8"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M21 15a4 4 0 01-4 4H8l-5 5V7a4 4 0 014-4h10a4 4 0 014 4z" />
+                        </svg>
+
+
+                        <!-- Repost  -->
+                        <svg class="w-6 h-6 cursor-pointer" fill="none" stroke="currentColor" stroke-width="1.8"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M7 7h10l-3-3m3 3l-3 3M17 17H7l3 3m-3-3l3-3" />
+                        </svg>
+
+                        <!-- Share -->
+                        <svg class="w-6 h-6 cursor-pointer" fill="none" stroke="currentColor" stroke-width="1.8"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" />
+                        </svg>
+
+                    </div>
+
+
+                    <!-- Info -->
+                    <div class="px-3 pb-3 text-sm space-y-1">
+                        <p class="font-semibold">24,589 likes</p>
+                        <p>
+                            <span class="font-semibold">realmadrid</span>
+                            Victory night 🤍🔥
+                        </p>
+                    </div>
+                </div>
+
+                <!-- ================= POST 2 ================= -->
+                <div class="w-full max-w-md  rounded-lg overflow-hidden cursor-pointer">
+
+                    <!-- Header -->
+                    <div class="flex items-center justify-between gap-3 p-3">
+                        <div class="flex items-center  gap-3">
+                            <img src="https://i.pravatar.cc/104" class="w-8 h-8 rounded-full object-cover">
+                            <span class="font-semibold text-sm">fcbarcelona</span>
+                            <span class="text-gray-400 text-sm">• 1h</span>
+
+                        </div>
+
+                        <div class="text-3xl flex items-center ">...</div>
+                    </div>
+
+                    <!-- Image -->
+                    <img src="https://picsum.photos/500/500?random=2" class="w-full object-cover">
+
+                    <!-- Actions -->
+                    <div class="flex items-center gap-5 p-3">
+
+                        <!-- Like -->
+                        <svg class="w-6 h-6 cursor-pointer hover:text-red-500 transition" fill="none"
+                            stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M20.8 4.6a5.5 5.5 0 00-7.8 0L12 5.6l-1-1a5.5 5.5 0 00-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 000-7.8z" />
+                        </svg>
+
+                        <!-- Comment -->
+                        <svg class="w-6 h-6 cursor-pointer" fill="none" stroke="currentColor" stroke-width="1.8"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M21 15a4 4 0 01-4 4H8l-5 5V7a4 4 0 014-4h10a4 4 0 014 4z" />
+                        </svg>
+
+
+                        <!-- Repost  -->
+                        <svg class="w-6 h-6 cursor-pointer" fill="none" stroke="currentColor" stroke-width="1.8"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M7 7h10l-3-3m3 3l-3 3M17 17H7l3 3m-3-3l3-3" />
+                        </svg>
+
+                        <!-- Share -->
+                        <svg class="w-6 h-6 cursor-pointer" fill="none" stroke="currentColor" stroke-width="1.8"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" />
+                        </svg>
+
+                    </div>
+
+
+                    <!-- Info -->
+                    <div class="px-3 pb-3 text-sm space-y-1">
+                        <p class="font-semibold">18,902 likes</p>
+                        <p>
+                            <span class="font-semibold">fcbarcelona</span>
+                            Training day 💙❤️
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </main>
+
+
+        <!-- Right Sidebar -->
+        <aside class="w-96  flex flex-col p-4 h-screen  gap-2 px-10">
+
+            <!--switch accounts  -->
+            <div class="flex items-center justify-between my-5">
+                <div class="flex items-center gap-3">
+                    <img src="https://i.pravatar.cc/100" class="w-10 h-10 rounded-full object-cover">
+                    <div>
+                        <p class="text-sm font-semibold">ramos</p>
+                        <p class="text-xs text-gray-500">ramos_97</p>
+                    </div>
+                </div>
+                <button class="text-blue-500 text-xs font-semibold hover:text-blue-400 hover:underline">switch</button>
+            </div>
+            <!-- Header -->
+
+            <div class="flex justify-between items-center mb-4 ">
+                <h2 class="font-semibold  text-sm">Suggestions For You</h2>
+                <button class=" text-xs font-semibold">See All</button>
+            </div>
+
+            <!-- Suggestion 1 -->
+            <div class="flex items-center justify-between mb-3">
+                <div class="flex items-center gap-3">
+                    <img src="https://i.pravatar.cc/50" class="w-10 h-10 rounded-full object-cover">
+                    <div>
+                        <p class="text-sm font-semibold">user_one</p>
+                        <p class="text-xs text-gray-500">New on Instagram</p>
+                    </div>
+                </div>
+                <button class="text-blue-500 text-xs font-semibold">Follow</button>
+            </div>
+
+            <!-- Suggestion 2 -->
+            <div class="flex items-center justify-between mb-3">
+                <div class="flex items-center gap-3">
+                    <img src="https://i.pravatar.cc/51" class="w-10 h-10 rounded-full object-cover">
+                    <div>
+                        <p class="text-sm font-semibold">user_two</p>
+                        <p class="text-xs text-gray-500">Suggested for you</p>
+                    </div>
+                </div>
+                <button class="text-blue-500 text-xs font-semibold">Follow</button>
+            </div>
+
+            <!-- Suggestion 3 -->
+            <div class="flex items-center justify-between mb-3">
+                <div class="flex items-center gap-3">
+                    <img src="https://i.pravatar.cc/52" class="w-10 h-10 rounded-full object-cover">
+                    <div>
+                        <p class="text-sm font-semibold">user_three</p>
+                        <p class="text-xs text-gray-500">Suggested for you</p>
+                    </div>
+                </div>
+                <button class="text-blue-500 text-xs font-semibold">Follow</button>
+            </div>
+
+            <!-- Suggestion 4 -->
+            <div class="flex items-center justify-between mb-3">
+                <div class="flex items-center gap-3">
+                    <img src="https://i.pravatar.cc/53" class="w-10 h-10 rounded-full object-cover">
+                    <div>
+                        <p class="text-sm font-semibold">user_four</p>
+                        <p class="text-xs text-gray-500">Suggested for you</p>
+                    </div>
+                </div>
+                <button class="text-blue-500 text-xs font-semibold">Follow</button>
+            </div>
+
+            <!-- Suggestion 5 -->
+            <div class="flex items-center justify-between mb-3">
+                <div class="flex items-center gap-3">
+                    <img src="https://i.pravatar.cc/54" class="w-10 h-10 rounded-full object-cover">
+                    <div>
+                        <p class="text-sm font-semibold">user_five</p>
+                        <p class="text-xs text-gray-500">Suggested for you</p>
+                    </div>
+                </div>
+                <button class="text-blue-500 text-xs font-semibold">Follow</button>
+            </div>
+
+        </aside>
+
+
+    </div>
+
+
+
+
+
+</body>
+
+</html>
