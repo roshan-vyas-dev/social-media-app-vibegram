@@ -39,7 +39,7 @@
     <div class="flex min-h-screen">
 
         <!-- Left Sidebar -->
-        <aside class="w-64  p-4 sticky top-0 h-screen border-r border-white/10 ">
+        <aside class="hidden lg:block  w-64  p-4 sticky top-0 h-screen border-r border-white/10 ">
 
             <!-- Top Section: name -->
             <a href="#" class="mt-5 block">
@@ -143,21 +143,71 @@
         </aside>
 
         <!-- Main Content -->
-        <main class="flex-1 p-4">
+        <main class="flex-1 px-0 md:px-6 lg:px-4 pb-20 lg:pb-4 overflow-y-auto">
+
+            <!-- MOBILE TOP BAR -->
+            <div class="flex items-center justify-between px-4 py-4 lg:hidden ">
+
+                <!-- Left -->
+                <h2 class="text-xl font-semibold" style="font-family: 'Pacifico', cursive;">Vibegram</h2>
+
+                <!-- Right Icons -->
+                <div class="flex items-center gap-5">
+
+                    <!-- Notifications -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 text-white" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14V9a6 6 0 10-12 0v5c0 .386-.145.735-.405 1.005L4 17h5m6 0v1a3 3 0 11-6 0v-1h6z" />
+                    </svg>
+
+                    <!-- Messages -->
+                    <svg class="w-6 h-6 cursor-pointer hover:text-blue-500 transition" fill="none" stroke="currentColor"
+                        stroke-width="1.8" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M21 15a4 4 0 01-4 4H8l-5 5V7a4 4 0 014-4h10a4 4 0 014 4z" />
+                    </svg>
+
+                </div>
+            </div>
+
 
             <!-- STORIES -->
-            <div class="flex items-center  my-3 gap-4  overflow-x-auto  no-scrollbar  pb-4  max-w-xl mx-auto">
+            <div class="flex items-center my-3 gap-4 overflow-x-auto no-scrollbar pb-4
+            px-3 lg:px-0 lg:max-w-xl lg:mx-auto">
+
+                <!-- YOUR STORY -->
+                <div class="flex flex-col items-center shrink-0">
+                    <div class="relative">
+                        <img src="https://i.pravatar.cc/110"
+                            class="w-24 h-24  lg:w-20 lg:h-20 rounded-full   p-[2px] bg-gradient-to-r from-green-400 to-blue-500 object-cover">
+
+                        <!-- PLUS ICON -->
+                        <span class="absolute bottom-0 right-0
+                        w-7 h-7 bg-white text-black
+                        rounded-full text-lg font-bold
+                        flex items-center justify-center
+                        border-2 border-gray-900">
+                            +
+                        </span>
+                    </div>
+
+                    <span class="text-xs mt-1 text-gray-300">Your story</span>
+                </div>
+
                 <!-- Story 1 -->
                 <div class="flex flex-col items-center flex-shrink-0">
-                    <div class="w-20 h-20 rounded-full bg-gradient-to-r from-green-400 to-blue-500 p-[2px]">
-                        <img src="https://i.pravatar.cc/110" class="w-full h-full rounded-full object-cover">
+                    <div
+                        class="w-24 h-24  lg:w-20 lg:h-20 rounded-full bg-gradient-to-r from-green-400 to-blue-500 p-[2px]">
+                        <img src="https://i.pravatar.cc/119" class="w-full h-full rounded-full object-cover">
                     </div>
                     <span class="text-xs mt-1">cristiano</span>
                 </div>
 
                 <!-- Story 2 -->
                 <div class="flex flex-col items-center flex-shrink-0">
-                    <div class="w-20 h-20 rounded-full bg-gradient-to-r from-green-400 to-blue-500 p-[2px]">
+                    <div
+                        class="w-24 h-24  lg:w-20 lg:h-20  rounded-full bg-gradient-to-r from-green-400 to-blue-500 p-[2px]">
                         <img src="https://i.pravatar.cc/101" class="w-full h-full rounded-full object-cover">
                     </div>
                     <span class="text-xs mt-1">realmadrid</span>
@@ -165,7 +215,8 @@
 
                 <!-- Story 3 -->
                 <div class="flex flex-col items-center flex-shrink-0">
-                    <div class="w-20 h-20 rounded-full bg-gradient-to-r from-green-400 to-blue-500 p-[2px]">
+                    <div
+                        class="w-24 h-24  lg:w-20 lg:h-20  rounded-full bg-gradient-to-r from-green-400 to-blue-500 p-[2px]">
                         <img src="https://i.pravatar.cc/102" class="w-full h-full rounded-full object-cover">
                     </div>
                     <span class="text-xs mt-1">fcbayern</span>
@@ -173,7 +224,8 @@
 
                 <!-- Story 4 -->
                 <div class="flex flex-col items-center flex-shrink-0">
-                    <div class="w-20 h-20 rounded-full bg-gradient-to-r from-green-400 to-blue-500 p-[2px]">
+                    <div
+                        class="w-24 h-24  lg:w-20 lg:h-20  rounded-full bg-gradient-to-r from-green-400 to-blue-500 p-[2px]">
                         <img src="https://i.pravatar.cc/103" class="w-full h-full rounded-full object-cover">
                     </div>
                     <span class="text-xs mt-1">alnassr</span>
@@ -181,7 +233,8 @@
 
                 <!-- Story 5 -->
                 <div class="flex flex-col items-center flex-shrink-0">
-                    <div class="w-20 h-20 rounded-full bg-gradient-to-r from-green-400 to-blue-500 p-[2px]">
+                    <div
+                        class="w-24 h-24  lg:w-20 lg:h-20  rounded-full bg-gradient-to-r from-green-400 to-blue-500 p-[2px]">
                         <img src="https://i.pravatar.cc/104" class="w-full h-full rounded-full object-cover">
                     </div>
                     <span class="text-xs mt-1">fcbarcelona</span>
@@ -189,7 +242,8 @@
 
                 <!-- Story 6 -->
                 <div class="flex flex-col items-center flex-shrink-0">
-                    <div class="w-20 h-20 rounded-full bg-gradient-to-r from-green-400 to-blue-500 p-[2px]">
+                    <div
+                        class="w-24 h-24  lg:w-20 lg:h-20 rounded-full bg-gradient-to-r from-green-400 to-blue-500 p-[2px]">
                         <img src="https://i.pravatar.cc/105" class="w-full h-full rounded-full object-cover">
                     </div>
                     <span class="text-xs mt-1">manutd</span>
@@ -197,7 +251,8 @@
 
                 <!-- story 7 -->
                 <div class="flex flex-col items-center flex-shrink-0">
-                    <div class="w-20 h-20 rounded-full bg-gradient-to-r from-green-400 to-blue-500 p-[2px]">
+                    <div
+                        class="w-24 h-24  lg:w-20 lg:h-20  rounded-full bg-gradient-to-r from-green-400 to-blue-500 p-[2px]">
                         <img src="https://i.pravatar.cc/106" class="w-full h-full rounded-full object-cover">
                     </div>
                     <span class="text-xs mt-1">arsenal</span>
@@ -205,7 +260,8 @@
 
                 <!-- story 8 -->
                 <div class="flex flex-col items-center flex-shrink-0">
-                    <div class="w-20 h-20 rounded-full bg-gradient-to-r from-green-400 to-blue-500 p-[2px]">
+                    <div
+                        class="w-24 h-24  lg:w-20 lg:h-20  rounded-full bg-gradient-to-r from-green-400 to-blue-500 p-[2px]">
                         <img src="https://i.pravatar.cc/107" class="w-full h-full rounded-full object-cover">
                     </div>
                     <span class="text-xs mt-1">chelsea</span>
@@ -213,7 +269,8 @@
 
                 <!-- story 9 -->
                 <div class="flex flex-col items-center flex-shrink-0">
-                    <div class="w-20 h-20 rounded-full bg-gradient-to-r from-green-400 to-blue-500 p-[2px]">
+                    <div
+                        class="w-24 h-24  lg:w-20 lg:h-20  rounded-full bg-gradient-to-r from-green-400 to-blue-500 p-[2px]">
                         <img src="https://i.pravatar.cc/108" class="w-full h-full rounded-full object-cover">
                     </div>
                     <span class="text-xs mt-1">mancity</span>
@@ -222,7 +279,8 @@
 
                 <!-- story 10 -->
                 <div class="flex flex-col items-center flex-shrink-0">
-                    <div class="w-20 h-20 rounded-full bg-gradient-to-r from-green-400 to-blue-500 p-[2px]">
+                    <div
+                        class="w-24 h-24  lg:w-20 lg:h-20  rounded-full bg-gradient-to-r from-green-400 to-blue-500 p-[2px]">
                         <img src="https://i.pravatar.cc/109" class="w-full h-full rounded-full object-cover">
                     </div>
                     <span class="text-xs mt-1">astonvilla</span>
@@ -235,7 +293,7 @@
             <div class="flex flex-col items-center gap-8 mt-6">
 
                 <!-- ================= POST 1 ================= -->
-                <div class="w-full max-w-md  rounded-lg overflow-hidden cursor-pointer">
+                <div class="w-full lg:max-w-md lg:rounded-lg overflow-hidden cursor-pointerr">
 
                     <!-- Header -->
                     <div class="flex items-center justify-between gap-3 p-3">
@@ -297,7 +355,7 @@
                 </div>
 
                 <!-- ================= POST 2 ================= -->
-                <div class="w-full max-w-md  rounded-lg overflow-hidden cursor-pointer">
+                <div class="w-full lg:max-w-md lg:rounded-lg overflow-hidden cursor-pointer">
 
                     <!-- Header -->
                     <div class="flex items-center justify-between gap-3 p-3">
@@ -367,7 +425,7 @@
 
 
         <!-- Right Sidebar -->
-        <aside class="w-96  flex flex-col p-4 h-screen  gap-2 px-10">
+        <aside class="hidden lg:flex w-96  flex flex-col p-4 h-screen  gap-2 px-10">
 
             <!--switch accounts  -->
             <div class="flex items-center justify-between my-5">
@@ -448,6 +506,49 @@
             </div>
 
         </aside>
+
+        <!-- Mobile Bottom Nav -->
+        <nav class="fixed bottom-0 left-0 right-0 bg-[#0f1115] border-t border-white/10
+            flex justify-around items-center h-14 lg:hidden z-50">
+
+            <a href="#" class="p-2">
+                <!-- Home -->
+                <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M3 10.5L12 3l9 7.5V21a1 1 0 01-1 1h-5v-7H9v7H4a1 1 0 01-1-1z" />
+                </svg>
+            </a>
+
+            <a href="#" class="p-2">
+                <!-- Search -->
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <circle cx="11" cy="11" r="8" />
+                    <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                </svg>
+            </a>
+
+            <a href="#" class="p-2">
+                <!-- Create -->
+                <svg class="w-9 h-9" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <line x1="12" y1="5" x2="12" y2="19" />
+                    <line x1="5" y1="12" x2="19" y2="12" />
+                </svg>
+            </a>
+
+            <a href="#" class="p-2">
+                <!-- Reels -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-white" fill="currentColor"
+                    viewBox="0 0 24 24">
+                    <path
+                        d="M2.25 7.125V16.875C2.25 18.321 3.429 19.5 4.875 19.5H19.125C20.571 19.5 21.75 18.321 21.75 16.875V7.125C21.75 5.679 20.571 4.5 19.125 4.5H4.875C3.429 4.5 2.25 5.679 2.25 7.125ZM9.75 15.75V8.25L16.5 12L9.75 15.75Z" />
+                </svg>
+            </a>
+
+            <a href="./profile.html" class="p-2">
+                <!-- Profile -->
+                <img src="https://i.pravatar.cc/110" class="w-8 h-8 rounded-full">
+            </a>
+        </nav>
+
 
 
     </div>

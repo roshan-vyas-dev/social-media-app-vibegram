@@ -15,14 +15,14 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="font-montserrat">
+<body class="font-montserrat bg-[#0f1115] text-white flex flex-col min-h-screen">
 
     <!-- main full card start -->
 
-    <div class="h-screen flex overflow-hidden border-b  border-b-gray-500">
+    <div class="min-h-screen flex flex-col md:flex-row overflow-hidden border-b border-gray-500">
 
         <!-- Left Section -->
-        <div class="w-[57%] bg-[#0f1115] flex flex-col items-center justify-start text-center px-10">
+        <div class=" hidden md:w-[57%] bg-[#0f1115] md:flex flex-col items-center justify-start text-center px-10">
 
             <!-- Logo -->
             <img src="./images/instablue.png" class="w-20 h-20 mt-16 self-start" alt="Vibegram Logo">
@@ -37,15 +37,17 @@
 
             <!-- social img -->
 
-            <img src="./images/Screenshot 2025-12-20 170440_cleanup.png" class="w-80 h-80 object-cover " />
+            <img src="./images/Screenshot 2025-12-20 170440_cleanup.png" class="mt-10 w-80 h-80 object-contain" />
 
 
         </div>
         <!--  -------------------------------------------------------------------------------------------------------  -->
 
         <!-- Right Section -->
-        <div class="w-[43%] border-l border-l-2 border-l-gray-500 flex flex-col justify-center bg-gray-900 px-12 py-6">
-            <h1 class="text-white text-lg font-semibold mb-5">Log into Vibegram</h1>
+        <div class="w-full h-screen md:w-[43%] border-l border-l-2 border-l-gray-500
+            flex flex-col justify-center
+            bg-gray-900 px-12 py-6">
+            <h1 class="text-white text-lg font-semibold mb-5 text-center md:text-left">Log into Vibegram</h1>
             <form action="./home.html" method="GET">
 
                 <!-- input start -->
@@ -138,7 +140,7 @@
     <!-- ------------------------------------------------------------------------------------------------- -->
 
     <!-- Footer -->
-    <footer class="w-full bg-[#0f1115]  py-4">
+    <footer class="hidden md:block w-full bg-[#0f1115] py-4 mt-auto">
         <div class="flex flex-wrap justify-center gap-x-4 gap-y-2 text-xs text-gray-400 font-semibold">
             <a href="#" class="hover:underline">About</a>
             <a href="#" class="hover:underline">Help</a>
