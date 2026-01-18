@@ -133,7 +133,7 @@
             <div class="flex flex-col  items-center justify-center my-6 gap-6 ">
 
                 <!-- Top: Profile pic + info -->
-                <div class="flex flex-row items-evenly   justify-center gap-6 w-full max-w-4xl mr-20 mt-6">
+                <div class="flex flex-col sm:flex-row items-center sm:items-start gap-6 w-full max-w-4xl mt-6 px-4">
 
                     <!-- Profile Picture -->
                     <div class="w-[120px] h-[120px] sm:w-[150px] sm:h-[150px] p-1 rounded-full">
@@ -141,11 +141,11 @@
                     </div>
 
                     <!-- Profile Info -->
-                    <div class="flex flex-col  gap-2">
+                    <div class="flex flex-col items-center sm:items-start gap-2 text-center sm:text-left">
                         <h1 class="text-2xl md:text-3xl font-bold">ramos_97</h1>
                         <p class="text-sm text-gray-400">Ramos</p>
 
-                        <div class="flex gap-6 mt-2  md:text-left">
+                        <div class="flex gap-6 mt-2 text-sm sm:text-base justify-center sm:justify-start">
                             <p><span class="font-semibold">0</span> posts</p>
                             <p><span class="font-semibold">110</span> followers</p>
                             <p><span class="font-semibold">70</span> following</p>
@@ -155,29 +155,20 @@
 
 
                 <!-- Buttons under profile info -->
-                <div class="w-full">
-                    <div class="flex justify-center ">
-                        <div class="flex gap-4 w-full max-w-xl   ">
-
-                            <button type="button"
-                                class="flex-1 py-2.5 text-sm font-semibold text-white bg-white/15 border border-white/30 rounded-xl transition-transform duration-200 ease-out hover:bg-white/20 active:scale-95 active:text-blue-500 ">
-                                Edit profile
-                            </button>
-
-                            <button type="button"
-                                class="flex-1 py-2.5 text-sm font-semibold text-white bg-white/15 border border-white/30 rounded-xl transition-transform duration-200 ease-out hover:bg-white/20 active:scale-95 active:text-blue-500 ">
-                                View archive
-                            </button>
-
-                        </div>
-                    </div>
-
-
+                <div class="flex gap-3 w-full max-w-md mx-auto px-4">
+                    <button
+                        class="flex-1 py-2 text-sm font-semibold bg-white/15 border border-white/30 rounded-xl hover:bg-white/20">
+                        Edit profile
+                    </button>
+                    <button
+                        class="flex-1 py-2 text-sm font-semibold bg-white/15 border border-white/30 rounded-xl hover:bg-white/20">
+                        View archive
+                    </button>
                 </div>
 
 
                 <!-- Story Highlight -->
-                <div class="flex justify-center gap-6 mt-6 px-4  w-[600px] mx-auto">
+                <div class="flex justify-start gap-6 mt-6 px-4 w-full max-w-4xl mx-auto overflow-x-auto">
 
                     <!-- New Story Circle -->
                     <div class="flex flex-col  items-center  mr-auto">
@@ -194,55 +185,71 @@
 
 
                 <!-- Tabs (Posts / Reels / Tagged) -->
-<div class="border-t border-white/10 mt-10 w-full max-w-5xl mx-auto">
-    <div class="flex justify-center gap-10 py-4 text-sm uppercase tracking-wide">
-        <button class="flex items-center gap-2 font-semibold border-t-2 border-white pt-4">
-            Posts
-        </button>
-        <button class="flex items-center gap-2 text-white/60 hover:text-white pt-4">
-            Reels
-        </button>
-        <button class="flex items-center gap-2 text-white/60 hover:text-white pt-4">
-            Tagged
-        </button>
-    </div>
-</div>
+                <div class="border-t border-white/10 mt-10 w-full max-w-5xl mx-auto">
+                    <div class="flex justify-center gap-10 py-4 text-sm uppercase tracking-wide">
+                        <button class="flex items-center gap-2 font-semibold border-t-2 border-white pt-4">
+                            Posts
+                        </button>
+                        <button class="flex items-center gap-2 text-white/60 hover:text-white pt-4">
+                            Reels
+                        </button>
+                        <button class="flex items-center gap-2 text-white/60 hover:text-white pt-4">
+                            Tagged
+                        </button>
+                    </div>
+                </div>
 
-<!-- Posts Grid -->
-<div class="grid grid-cols-3 gap-1 md:gap-4 max-w-5xl mx-auto px-4 pb-20">
+                <!-- Posts Grid -->
+                <div class="grid grid-cols-3 gap-[2px] sm:gap-3 max-w-5xl mx-auto px-1 sm:px-4 pb-20">
 
-    <!-- Post -->
-    <div class="aspect-square bg-black overflow-hidden cursor-pointer">
-        <img src="https://picsum.photos/600?1"
-            class="w-full h-full object-cover hover:scale-110 transition-transform duration-300">
-    </div>
+                    <!-- Post -->
+                    <div class="aspect-square bg-black overflow-hidden cursor-pointer">
+                        <img src="https://picsum.photos/600?1"
+                            class="w-full h-full object-cover hover:scale-110 transition-transform duration-300">
+                    </div>
 
-    <div class="aspect-square bg-black overflow-hidden cursor-pointer">
-        <img src="https://picsum.photos/600?2"
-            class="w-full h-full object-cover hover:scale-110 transition-transform duration-300">
-    </div>
+                    <div class="aspect-square bg-black overflow-hidden cursor-pointer">
+                        <img src="https://picsum.photos/600?2"
+                            class="w-full h-full object-cover hover:scale-110 transition-transform duration-300">
+                    </div>
 
-    <div class="aspect-square bg-black overflow-hidden cursor-pointer">
-        <img src="https://picsum.photos/600?3"
-            class="w-full h-full object-cover hover:scale-110 transition-transform duration-300">
-    </div>
+                    <div class="aspect-square bg-black overflow-hidden cursor-pointer">
+                        <img src="https://picsum.photos/600?3"
+                            class="w-full h-full object-cover hover:scale-110 transition-transform duration-300">
+                    </div>
 
-    <div class="aspect-square bg-black overflow-hidden cursor-pointer">
-        <img src="https://picsum.photos/600?4"
-            class="w-full h-full object-cover hover:scale-110 transition-transform duration-300">
-    </div>
+                    <div class="aspect-square bg-black overflow-hidden cursor-pointer">
+                        <img src="https://picsum.photos/600?4"
+                            class="w-full h-full object-cover hover:scale-110 transition-transform duration-300">
+                    </div>
 
-    <div class="aspect-square bg-black overflow-hidden cursor-pointer">
-        <img src="https://picsum.photos/600?5"
-            class="w-full h-full object-cover hover:scale-110 transition-transform duration-300">
-    </div>
+                    <div class="aspect-square bg-black overflow-hidden cursor-pointer">
+                        <img src="https://picsum.photos/600?5"
+                            class="w-full h-full object-cover hover:scale-110 transition-transform duration-300">
+                    </div>
 
-    <div class="aspect-square bg-black overflow-hidden cursor-pointer">
-        <img src="https://picsum.photos/600?6"
-            class="w-full h-full object-cover hover:scale-110 transition-transform duration-300">
-    </div>
+                    <div class="aspect-square bg-black overflow-hidden cursor-pointer">
+                        <img src="https://picsum.photos/600?6"
+                            class="w-full h-full object-cover hover:scale-110 transition-transform duration-300">
+                    </div>
 
-</div>
+                    <div class="aspect-square bg-black overflow-hidden cursor-pointer">
+                        <img src="https://picsum.photos/600?7"
+                            class="w-full h-full object-cover hover:scale-110 transition-transform duration-300">
+                    </div>
+
+                    <div class="aspect-square bg-black overflow-hidden cursor-pointer">
+                        <img src="https://picsum.photos/600?8"
+                            class="w-full h-full object-cover hover:scale-110 transition-transform duration-300">
+                    </div>
+
+                    <div class="aspect-square bg-black overflow-hidden cursor-pointer">
+                        <img src="https://picsum.photos/600?9"
+                            class="w-full h-full object-cover hover:scale-110 transition-transform duration-300">
+                    </div>
+
+
+                </div>
 
 
 
